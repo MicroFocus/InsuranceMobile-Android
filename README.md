@@ -1,4 +1,4 @@
-# InsuranceWeb-Testing
+# InsuranceMobile
 
 InsuranceMobile is a sample mobile application available for Android and iOS provided by [Micro Focus][1]. This repository contains the source code of the Android variant of InsuranceMobile, as well as [Silk Test][2] sample projects with UI tests.
 
