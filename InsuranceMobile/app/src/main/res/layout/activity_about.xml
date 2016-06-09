@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="silktest.insurancemobile.AboutActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:minHeight="66dp"
+    android:background="#CED7E7"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="66dp"
+      android:cropToPadding="true"
+      android:scaleType="matrix"
+      android:src="@drawable/header" />
+  </android.support.v7.widget.Toolbar>
+
+  <WebView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/webView"
+      android:paddingTop="16pt"
+      android:layout_gravity="center_horizontal" />
+</LinearLayout>

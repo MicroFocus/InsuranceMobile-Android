@@ -1,0 +1,26 @@
+<resources>
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:button">@style/MyButton</item>
+    <item name="android:editTextStyle">@style/AppTheme.MyEditText</item>
+  </style>
+
+  <style name="AppTheme.MyEditText" parent="Widget.AppCompat.EditText">
+    <item name="android:color">@color/colorPrimary</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:textColorHint">@color/colorAccent</item>
+  </style>
+
+  <style name="MyButton" parent="Widget.AppCompat.Button">
+    <item name="android:color">@color/colorPrimary</item>
+    <item name="colorButtonNormal">@color/colorPrimary</item>
+    <item name="colorControlHighlight">@color/colorAccent</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

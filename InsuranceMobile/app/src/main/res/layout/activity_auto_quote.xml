@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="silktest.insurancemobile.AutoQuoteActivity">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="#CED7E7"
+    android:elevation="4dp"
+    android:minHeight="66dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="66dp"
+      android:cropToPadding="true"
+      android:scaleType="matrix"
+      android:src="@drawable/header"/>
+  </android.support.v7.widget.Toolbar>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/autoquote_zip"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/agent_search_zip"
+          android:inputType="numberDecimal"
+          />
+      </android.support.design.widget.TextInputLayout>
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/autoquote_email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/prompt_email"
+          android:inputType="textEmailAddress"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/autoquote_age"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/prompt_age"
+          android:inputType="numberDecimal"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/radio_gender"
+        android:text="Gender"/>
+
+      <RadioGroup
+        android:id="@+id/radio_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+          android:id="@+id/radio_male"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:text="@string/radio_male"/>
+
+        <RadioButton
+          android:id="@+id/radio_female"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/radio_female"/>
+      </RadioGroup>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/rating_driving_record"
+        android:text="Driving Record"/>
+
+      <RatingBar
+        android:id="@+id/rating_driving_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:rating="2.0"
+        android:stepSize="1.0"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/radio_automobiletype"
+        android:text="Automobile Type"/>
+
+      <RadioGroup
+        android:id="@+id/radio_automobiletype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+          android:id="@+id/radio_car"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:text="@string/radio_car"/>
+
+        <RadioButton
+          android:id="@+id/radio_truck"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/radio_truck"/>
+      </RadioGroup>
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/autoquote_car_year"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/car_year"
+          android:inputType="numberDecimal"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/car_make"
+        android:text="Make"/>
+
+      <Spinner
+        android:id="@+id/car_make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/car_model"
+        android:text="Model"/>
+
+      <Spinner
+        android:id="@+id/car_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8pt"
+        android:labelFor="@+id/financial_info"
+        android:text="Financial Info"/>
+
+      <Spinner
+        android:id="@+id/financial_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/financial_options"/>
+
+      <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:theme="@style/MyButton"
+        />
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

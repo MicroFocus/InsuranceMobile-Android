@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group>
+    <item
+      android:id="@+id/action_autoquote"
+      android:title="@string/menu_autoquote"/>
+    <item
+      android:id="@+id/ation_agent_lookup"
+      android:title="@string/menu_agentlookup"/>
+    <item
+      android:id="@+id/action_logout"
+      android:title="@string/menu_logout"/>
+  </group>
+  <group>
+    <item
+      android:id="@+id/action_about"
+      android:title="@string/menu_about"/>
+  </group>
+</menu>
