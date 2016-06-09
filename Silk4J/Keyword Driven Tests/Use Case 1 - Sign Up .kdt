@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyword xmlns="http://www.borland.com/silk/Keyword">
+    <InvokeKeyword name="Start application" />
+    <InvokeKeyword name="Sign up">
+        <Argument value="demo" />
+        <Argument value="demo" />
+        <Argument value="demo@demo.com" />
+        <Argument value="demo" />
+    </InvokeKeyword>
+    <InvokeKeyword name="Login">
+        <Argument value="demo@demo.com" />
+        <Argument value="demo" />
+        <Argument value="demo demo" />
+    </InvokeKeyword>
+    <InvokeKeyword name="Logout" />
+</Keyword>
